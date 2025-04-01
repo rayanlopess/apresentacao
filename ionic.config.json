@@ -1,0 +1,7 @@
+{
+  "name": "tela-apresentacao",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
