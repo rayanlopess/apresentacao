@@ -1,20 +1,104 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-menu side="end" contentId="main-content">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title>Menu Content</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+  <ion-content class="ion-padding">
+    <ion-card routerLink="/etapa1">
+      <ion-card-header>
+        <div class="grid-apresentacao">
+          <div id="biblioteca"><ion-icon class="icon" name="library"></ion-icon></div>
+          <div id="titulo-card"><ion-card-title id="titulo">Apresentação</ion-card-title></div>
+          <div id="seta"><ion-icon class="icon" name="chevron-forward"></ion-icon></div>
+        </div>
+      </ion-card-header>
+    </ion-card>
+  </ion-content>
+
+</ion-menu>
+
+
+
+
+
+<div class="ion-page" id="main-content">
+
+  <ion-header>
+    <ion-toolbar>
+
+
+      <ion-grid>
+        <ion-row class="linha1">
+          <ion-col>
+
+            <ion-avatar>
+              <img id="imagemIcon" alt="Silhouette of a person's head" src="../../assets/icon/2c4880ec7decff9eff44468cbe25262d.jpg" />
+            </ion-avatar>
+
+          </ion-col>
+          <ion-col>
+            <ion-buttons class="botoes-superiores" lot="end">
+              <a href="#"><ion-icon class="botao-superior" name="share-social"></ion-icon></a>
+              <a href="#"><ion-icon class="botao-superior" name="mail-unread"></ion-icon></a>
+              <ion-menu-button id="menu-icon"></ion-menu-button>
+            </ion-buttons>
+          </ion-col>
+
+        </ion-row>
+
+        <ion-row class="linha2">
+          <ion-col>
+            <ion-title id="titulo-principal">Olá, Rayan!</ion-title>
+          </ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+
+    </ion-toolbar>
+  </ion-header>
+
+
+
+  <ion-content class="ion-padding">
+    
+    
+
+    
+      <ion-card routerLink="/etapa1">
+        <ion-card-header>
+          <div class="grid-apresentacao">
+            <div id="biblioteca"><ion-icon class="icon" name="library"></ion-icon></div>
+            <div id="titulo-card"><ion-card-title id="titulo">Apresentação</ion-card-title></div>
+            <div id="seta"><ion-icon class="icon" name="chevron-forward"></ion-icon></div>
+          </div>
+        </ion-card-header>
+      </ion-card>
+
+      <ion-card routerLink="">
+        <ion-card-header>
+          <div class="grid-apresentacao">
+            <div id="biblioteca"><ion-icon class="icon" name="book"></ion-icon></div>
+            <div id="titulo-card"><ion-card-title id="titulo">Conteúdos</ion-card-title></div>
+            <div id="seta"><ion-icon class="icon" name="chevron-forward"></ion-icon></div>
+          </div>
+        </ion-card-header>
+      </ion-card>
+      <ion-card routerLink="">
+        <ion-card-header>
+          <div class="grid-apresentacao">
+            <div id="biblioteca"><ion-icon class="icon" name="settings"></ion-icon></div>
+            <div id="titulo-card"><ion-card-title id="titulo">Configurações</ion-card-title></div>
+            <div id="seta"><ion-icon class="icon" name="chevron-forward"></ion-icon></div>
+          </div>
+        </ion-card-header>
+      </ion-card>
+    
+
+
+
+  </ion-content>
+</div>
